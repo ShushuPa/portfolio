@@ -6,7 +6,7 @@ type DotGridProps = {
   influenceRadius?: number;  // radius of mouse influence
 };
 
-export default function DotGrid({ spacing = 70, size = 3, influenceRadius = 100 }: DotGridProps) {
+export default function DotGrid({ spacing = 71, size = 3, influenceRadius = 100 }: DotGridProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   
   const mouseRef = useRef<{ x: number; y: number } | null>(null);

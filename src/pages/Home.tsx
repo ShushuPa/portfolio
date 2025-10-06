@@ -1,13 +1,16 @@
 import DotGrid from "../components/DotGrid";
 import Buttons from "../components/Buttons";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen transition">
+      <NavBar />
       <DotGrid />
-      <div className="min-h-screen flex items-center justify-items-start">
+      <section className="min-h-screen flex flex-col items-center justify-center md:flex-row md:items-center md:justify-center">
         <Buttons label={"Click Here"}/>
-      </div>
+        <Buttons label={"Clickea Acá"}/>
+      </section>
     </div>
   );
 }
